@@ -4,9 +4,7 @@
 
 Simple, single class wrapper to get device information from an android device.
 
-This library provides an easy way to access all the device information without having to deal with all the boilerplate stuff going on inside.
-
-<b> As part of the process of my learning kotlin, I migrated the library to support Kotlin as well. If you would like to view the Kotlin version of the library - please checkout branch</b> <i>migrate_to_kotlin</i>
+This library from anitaa1990 provides an easy way to access all the device information without having to deal with all the boilerplate stuff going on inside.
 
 Library also provides option to ask permissions for Marshmellow devices! 
 
@@ -304,7 +302,4 @@ permissionManager.showPermissionDialog(permission)
 | Flag to cancel the dialog    | ```isDialogCancellable()``` | boolean |
 
 
-<h2>Created and maintained by:</h2>
-<p>Anitaa Murthy  murthyanitaa@gmail.com</p>
-<p><a href="https://twitter.com/anitaa_1990"> <img src="https://github.com/anitaa1990/DeviceInfo-Sample/blob/master/media/twitter-icon.png" alt="Twitter" style="max-width:100%;"> </a><a href="https://plus.google.com/104409749442569901352"> <img src="https://github.com/anitaa1990/DeviceInfo-Sample/blob/master/media/google-icon.png" alt="Google Plus" style="max-width:100%;"> </a><a href="https://www.linkedin.com/in/anitaa-murthy-41531699"> <img src="https://github.com/anitaa1990/DeviceInfo-Sample/blob/master/media/linkedin-icon.png" alt="Linkedin" style="max-width:100%;"> </a></p>
 
