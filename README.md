@@ -4,7 +4,7 @@
 
 Simple, single class wrapper to get device information from an android device.
 
-This library from anitaa1990 provides an easy way to access all the device information without having to deal with all the boilerplate stuff going on inside.
+This library originally developed by anitaa1990 but modiefied by me provides an easy way to access all the device information without having to deal with all the boilerplate stuff going on inside.
 
 Library also provides option to ask permissions for Marshmellow devices! 
 
@@ -301,5 +301,10 @@ permissionManager.showPermissionDialog(permission)
 | Should display the negative button flag    | ```withDenyDialogNegBtn()``` | boolean |
 | Flag to cancel the dialog    | ```isDialogCancellable()``` | boolean |
 
-
+<h2Features removed due to changes in Android Api's </h2>
+getDeviceId() has been deprecated since API level 26.  
+1) Get IMEI</br>
+2) Get IMSI</br>
+3) Get getsIMSerial</br>
+Permission is only granted for system apps now.
 
