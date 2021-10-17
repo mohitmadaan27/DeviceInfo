@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/DeviceInfo-Sample-master.iml" filepath="$PROJECT_DIR$/.idea/modules/DeviceInfo-Sample-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DeviceInfo-Sample-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DeviceInfo-Sample-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/deviceinfo/DeviceInfo-Sample-master.deviceinfo.iml" filepath="$PROJECT_DIR$/.idea/modules/deviceinfo/DeviceInfo-Sample-master.deviceinfo.iml" />
     </modules>
   </component>
 </project>

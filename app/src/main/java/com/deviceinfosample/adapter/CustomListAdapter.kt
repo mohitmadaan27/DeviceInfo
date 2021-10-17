@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
 import com.deviceinfosample.R
-import com.an.deviceinfo.ads.Ad
-import com.an.deviceinfo.location.DeviceLocation
-import com.an.deviceinfo.userapps.UserApps
-import com.an.deviceinfo.usercontacts.UserContacts
+import com.mohit.deviceinfo.ads.Ad
+import com.mohit.deviceinfo.location.DeviceLocation
+import com.mohit.deviceinfo.userapps.UserApps
+import com.mohit.deviceinfo.usercontacts.UserContacts
 import android.widget.TextView
-import com.an.deviceinfo.device.model.*
+import com.mohit.deviceinfo.device.model.*
 
 class CustomListAdapter : RecyclerView.Adapter<CustomViewHolder> {
     private var context: Context
@@ -223,47 +223,42 @@ class CustomListAdapter : RecyclerView.Adapter<CustomViewHolder> {
 
     private fun handleNetworkInfo(holder: CustomViewHolder, position: Int) {
         when (position) {
-            0 -> holder.textView.text = "IMEI:"
-            1 -> holder.textView.text = "IMSI:"
-            2 -> {
+
+            0 -> {
                 holder.textView.text = "Phone Type:"
                 holder.desc.text = (`object` as Network?)!!.phoneType
             }
-            3 -> holder.textView.text = "Phone Number:"
-            4 -> {
+            1 -> {
                 holder.textView.text = "Carrier:"
                 holder.desc.text = (`object` as Network?)!!.operator
             }
-            5 -> {
-                holder.textView.text = "SIM Serial:"
-                holder.desc.text = (`object` as Network?)!!.getsIMSerial()
-            }
-            6 -> {
+
+            2 -> {
                 holder.textView.text = "is SIM Locked:"
                 holder.desc.text = (`object` as Network?)!!.isSimNetworkLocked.toString()
             }
-            7 -> {
+            3 -> {
                 holder.textView.text = "is Nfc Enabled:"
                 holder.desc.text = (`object` as Network?)!!.isNfcEnabled.toString()
             }
-            8 -> {
+            4 -> {
                 holder.textView.text = "is Nfc Present:"
                 holder.desc.text = (`object` as Network?)!!.isNfcPresent.toString()
             }
-            9 -> {
+            5 -> {
                 holder.textView.text = "is Wifi Enabled:"
                 holder.desc.text = (`object` as Network?)!!.isWifiEnabled.toString()
             }
-            10 -> {
+            6 -> {
                 holder.textView.text = "is Network Available:"
                 holder.desc.text =
                     (`object` as Network?)!!.isNetworkAvailable.toString()
             }
-            11 -> {
+            7 -> {
                 holder.textView.text = "Network Class:"
                 holder.desc.text = (`object` as Network?)!!.networkClass
             }
-            12 -> {
+            8 -> {
                 holder.textView.text = "Network Type:"
                 holder.desc.text = (`object` as Network?)!!.networkType
             }

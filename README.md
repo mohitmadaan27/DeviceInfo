@@ -26,14 +26,14 @@ Library also provides option to ask permissions for Marshmellow devices!
 
 ```gradle
 dependencies {
-        implementation 'com.an.deviceinfo:deviceinfo:0.1.5'
+        implementation 'com.mohit.deviceinfo:deviceinfo:0.1.5'
 }
 ```
 
 <b>Maven Dependecy</b></br>
 ```xml
 <dependency>
-  <groupId>com.an.deviceinfo</groupId>
+  <groupId>com.mohit.deviceinfo</groupId>
   <artifactId>deviceinfo</artifactId>
   <version>0.1.5</version>
   <type>pom</type>

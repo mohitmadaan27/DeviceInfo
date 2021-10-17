@@ -15,22 +15,22 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.an.deviceinfo.ads.Ad
-import com.an.deviceinfo.ads.AdInfo
-import com.an.deviceinfo.ads.AdInfo.AdIdCallback
-import com.an.deviceinfo.device.model.*
-import com.an.deviceinfo.location.LocationInfo
-import com.an.deviceinfo.permission.PermissionManager
-import com.an.deviceinfo.permission.PermissionManager.PermissionCallback
-import com.an.deviceinfo.permission.PermissionUtils
-import com.an.deviceinfo.userapps.UserAppInfo
-import com.an.deviceinfo.usercontacts.UserContactInfo
+import com.mohit.deviceinfo.ads.Ad
+import com.mohit.deviceinfo.ads.AdInfo
+import com.mohit.deviceinfo.ads.AdInfo.AdIdCallback
+import com.mohit.deviceinfo.device.model.*
+import com.mohit.deviceinfo.location.LocationInfo
+import com.mohit.deviceinfo.permission.PermissionManager
+import com.mohit.deviceinfo.permission.PermissionManager.PermissionCallback
+import com.mohit.deviceinfo.permission.PermissionUtils
+import com.mohit.deviceinfo.userapps.UserAppInfo
+import com.mohit.deviceinfo.usercontacts.UserContactInfo
 import com.deviceinfosample.R
 import com.deviceinfosample.adapter.CustomListAdapter
 
 class MainFragment : Fragment(), AdIdCallback, PermissionCallback {
     private var position = 0
-    private var mActivity: Activity? = null
+    private lateinit var mActivity: Activity
     private var recyclerView: RecyclerView? = null
     private var adapter: CustomListAdapter? = null
     private var permissionManager: PermissionManager? = null
